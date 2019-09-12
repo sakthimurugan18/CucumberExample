@@ -1,4 +1,4 @@
-package org.cucumber.CucumberBasic;
+package com.stepdefinitions;
 
 import java.util.List;
 import java.util.Map;

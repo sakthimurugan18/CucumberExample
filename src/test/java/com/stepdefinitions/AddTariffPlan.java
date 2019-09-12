@@ -1,4 +1,4 @@
-package org.cucumber.CucumberBasic;
+package com.stepdefinitions;
 
 import java.util.List;
 import java.util.Map;
@@ -7,8 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.service.DriverCommandExecutor;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -47,7 +45,7 @@ public class AddTariffPlan {
 
 	@When("User enter all the data values.")
 	public void user_enter_all_the_data_values(DataTable datas) {
-		
+
 		List<Map<String, String>> map = datas.asMaps(String.class, String.class);
 
 		driver.findElement(By.id("rental1")).sendKeys(map.get(3).get("MothRen"));
@@ -57,6 +55,19 @@ public class AddTariffPlan {
 		driver.findElement(By.id("minutes_charges")).sendKeys(map.get(3).get("LC"));
 		driver.findElement(By.id("inter_charges")).sendKeys(map.get(3).get("IC"));
 		driver.findElement(By.id("sms_charges")).sendKeys(map.get(3).get("SC"));
+	}
+
+	@When("User enter all the data value of outline {string},{string},{string},{string},{string},{string},{string}")
+	public void user_enter_all_the_data_value_of_outline(String monthRent, String loMins, String inMins, String smsPack,
+			String lpMins, String iPmins, String spCharge) {
+		driver.findElement(By.id("rental1")).sendKeys(monthRent);
+		driver.findElement(By.id("local_minutes")).sendKeys(loMins);
+		driver.findElement(By.id("inter_minutes")).sendKeys(inMins);
+		driver.findElement(By.id("sms_pack")).sendKeys(smsPack);
+		driver.findElement(By.id("minutes_charges")).sendKeys(lpMins);
+		driver.findElement(By.id("inter_charges")).sendKeys(iPmins);
+		driver.findElement(By.id("sms_charges")).sendKeys(spCharge);
+
 	}
 
 	@When("click on submit button")
