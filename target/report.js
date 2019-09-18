@@ -22,8 +22,14 @@ formatter.scenario({
     },
     {
       "name": "@smoke"
+    },
+    {
+      "name": "@Third"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should be in the telecom home page",
@@ -142,8 +148,14 @@ formatter.scenario({
     },
     {
       "name": "@smoke"
+    },
+    {
+      "name": "@Second"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should be in the telecom home page",
@@ -270,6 +282,9 @@ formatter.scenarioOutline({
   "tags": [
     {
       "name": "@regression"
+    },
+    {
+      "name": "@First"
     }
   ]
 });
@@ -365,8 +380,14 @@ formatter.scenario({
     },
     {
       "name": "@regression"
+    },
+    {
+      "name": "@First"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should be in the telecom home page",
@@ -428,8 +449,14 @@ formatter.scenario({
     },
     {
       "name": "@regression"
+    },
+    {
+      "name": "@First"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should be in the telecom home page",
@@ -491,8 +518,14 @@ formatter.scenario({
     },
     {
       "name": "@regression"
+    },
+    {
+      "name": "@First"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should be in the telecom home page",
@@ -554,8 +587,14 @@ formatter.scenario({
     },
     {
       "name": "@regression"
+    },
+    {
+      "name": "@First"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should be in the telecom home page",

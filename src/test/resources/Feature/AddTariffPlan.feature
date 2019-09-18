@@ -1,7 +1,7 @@
 @regression
 Feature: AddTariffPlan
 
-@regression @smoke
+  @regression @smoke @Third
   Scenario: 
     Given User should be in the telecom home page
     And click add customer button
@@ -13,7 +13,8 @@ Feature: AddTariffPlan
       |  300 |  30 | 10 | 50 | 5 | 1 | 1 |
     And click on submit button
     Then user should be displayed customer id is entered
-@smoke
+
+  @smoke @Second
   Scenario: 
     Given User should be in the telecom home page
     And click add customer button
@@ -26,7 +27,8 @@ Feature: AddTariffPlan
       |     300 |  30 | 10 |  50 |  5 |  1 |  1 |
     And click on submit button
     Then user should be displayed customer id is entered
-@regression
+
+  @regression @First
   Scenario Outline: 
     Given User should be in the telecom home page
     And click add customer button
