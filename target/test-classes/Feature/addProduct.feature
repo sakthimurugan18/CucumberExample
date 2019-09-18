@@ -4,6 +4,7 @@ Background:
 	Given User should be in the telecom home pages 
 	And click add customer buttons 
 	
+@smoke
 Scenario: 
 	When User enter all the data. 
 		| karthi | rajan | rajan@gmail.com | chennai | 6030025890 |

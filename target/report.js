@@ -2,12 +2,34 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "name": "AddTariffPlan",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
 });
 formatter.scenario({
   "name": "",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@Third"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should be in the telecom home page",
@@ -119,7 +141,21 @@ formatter.result({
 formatter.scenario({
   "name": "",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@Second"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should be in the telecom home page",
@@ -242,7 +278,15 @@ formatter.result({
 formatter.scenarioOutline({
   "name": "",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@First"
+    }
+  ]
 });
 formatter.step({
   "name": "User should be in the telecom home page",
@@ -329,7 +373,21 @@ formatter.examples({
 formatter.scenario({
   "name": "",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@First"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should be in the telecom home page",
@@ -384,7 +442,21 @@ formatter.result({
 formatter.scenario({
   "name": "",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@First"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should be in the telecom home page",
@@ -439,7 +511,21 @@ formatter.result({
 formatter.scenario({
   "name": "",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@First"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should be in the telecom home page",
@@ -494,7 +580,21 @@ formatter.result({
 formatter.scenario({
   "name": "",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@First"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should be in the telecom home page",
@@ -542,175 +642,6 @@ formatter.step({
 });
 formatter.match({
   "location": "AddTariffPlan.user_should_be_displayed_customer_id_is_entered()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.uri("src/test/resources/Feature/addProduct.feature");
-formatter.feature({
-  "name": "AddCustomerList",
-  "description": "",
-  "keyword": "Feature"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "User should be in the telecom home pages",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "AddCustomerSteps.user_should_be_in_the_telecom_home_pages()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click add customer buttons",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AddCustomerSteps.click_add_customer_buttons()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "User enter all the data.",
-  "rows": [
-    {
-      "cells": [
-        "karthi",
-        "rajan",
-        "rajan@gmail.com",
-        "chennai",
-        "6030025890"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AddCustomerSteps.user_enter_all_the_data(DataTable)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click on submit buttons",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AddCustomerSteps.click_on_submit_buttons()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should be displayed customer id is enteredd",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AddCustomerSteps.user_should_be_displayed_customer_id_is_enteredd()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "User should be in the telecom home pages",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "AddCustomerSteps.user_should_be_in_the_telecom_home_pages()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click add customer buttons",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AddCustomerSteps.click_add_customer_buttons()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "User enter all the data for map.",
-  "rows": [
-    {
-      "cells": [
-        "fname",
-        "karthi"
-      ]
-    },
-    {
-      "cells": [
-        "lname",
-        "rajan"
-      ]
-    },
-    {
-      "cells": [
-        "email",
-        "rajan@gmail.com"
-      ]
-    },
-    {
-      "cells": [
-        "address",
-        "chennai"
-      ]
-    },
-    {
-      "cells": [
-        "phno",
-        "6030025890"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AddCustomerSteps.user_enter_all_the_data_for_map(DataTable)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click on submit buttons",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AddCustomerSteps.click_on_submit_buttons()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should be displayed customer id is enteredd",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AddCustomerSteps.user_should_be_displayed_customer_id_is_enteredd()"
 });
 formatter.result({
   "status": "passed"
